@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="UserRegistrationReport" pageWidth="595" pageHeight="842" orientation="Portrait" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="98b01b9e-86b1-4dc9-9304-672b1f2989a3">
+    <title>
+        <band height="79" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="0" width="100" height="30" uuid="b6977ed7-624b-4812-a7b6-310888f23f52"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["User Registration Form"]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="10" width="100" height="20" uuid="63d58bfc-d43b-4787-b906-107b3b9fe5bc"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Name:"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="120" y="10" width="200" height="20" uuid="89b046e4-1b39-4cb0-86cc-31e6501953b3"/>
+                <textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="40" width="100" height="20" uuid="c67e2b09-6a24-4cf7-9de1-6ff49a36fa63"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Email:"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="120" y="40" width="200" height="20" uuid="0891908b-e0cf-40d3-a1d7-4b3f4ef5ef29"/>
+                <textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="70" width="100" height="20" uuid="cf98b9a6-e3c0-4c2a-995e-9e08a14a818e"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Date Of Birth:"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="120" y="70" width="200" height="20" uuid="6099d69c-5c05-4f64-a2f3-ebda588df66c"/>
+                <textFieldExpression><![CDATA[$P{dateOfBirth}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="100" width="100" height="20" uuid="0bce418d-43d7-43e9-b2d2-e7600a83b69a"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Gender:"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="120" y="100" width="100" height="20" uuid="cce8752c-dc2c-4a47-8906-055d94a7804b"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{isMale} ? "Male" : ""]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="220" y="100" width="100" height="20" uuid="0be5931e-7470-49b2-b00e-b22a491a7437"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{isFemale} ? "Female" : ""]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="320" y="100" width="100" height="20" uuid="0045d4f6-bf81-4c67-8559-63a8c52426b8"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{isOther} ? "Other" : ""]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
